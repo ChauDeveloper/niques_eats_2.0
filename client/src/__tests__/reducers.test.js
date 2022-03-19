@@ -15,7 +15,7 @@ import {
   // create a sample of what our global state will look like
   const initialState = {
     products: [],
-    categories: [{ name: 'Food' }],
+    categories: [{ name: 'Main Dishes' }],
     currentCategory: '1',
     cart: [
       {
