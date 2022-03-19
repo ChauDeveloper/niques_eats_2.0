@@ -40,6 +40,16 @@ export const QUERY_CATEGORIES = gql`
   }
 `;
 
+export const QUERY_USERS = gql`
+query Users {
+  users {
+     _id
+    username
+    email
+  }
+}
+`;
+
 export const QUERY_USER = gql`
   {
     user {

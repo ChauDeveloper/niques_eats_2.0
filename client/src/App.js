@@ -42,6 +42,7 @@ const client = new ApolloClient({
 
 function App() {
   return (
+
     <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
@@ -49,24 +50,23 @@ function App() {
           <Header />
           <SocialButtons />
           <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/signup" component={Signup} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/profile/:username?" component={Profile} />
-          <Route exact path="/menu" component={MenuBrunch} />
-          <Route exact path="/menu/dinner" component={MenuDinner} />
-          <Route exact path="/orderHistory" component={OrderHistory} />
-          <Route exact path="/products/:id" component={Detail} />
-          <Route exact path="/success" component={Success} />
-          <Route component={NoMatch} />
-        </Switch>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={Signup} />
+                <Route exact path="/profile" component={Profile} />
+                <Route exact path="/profile/:username?" component={Profile} />
+                <Route exact path="/menu" component={MenuBrunch} />
+                <Route exact path="/menu/dinner" component={MenuDinner} />
+                <Route exact path="/orderHistory" component={OrderHistory} />
+                <Route exact path="/products/:id" component={Detail} />
+                <Route exact path="/success" component={Success} />
+                <Route component={NoMatch} />
+              </Switch>
+          </div>
+          </StoreProvider>
         </div>
-        </StoreProvider>
-      </div>
-          <Footer />
-        
+        <Footer />
       </Router>
     </ApolloProvider>
   );

@@ -57,10 +57,6 @@ a:visited {
 	color: inherit;
 }
 
-.nav-link {
-	color: #512b00 !important;
-}
-
 .nav-item:hover {
 	color: var(--secondary);
 	background-color: var(--quatrinary);
