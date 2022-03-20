@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
+import CategoryMenuBrunch from "../components/CategoryMenuBrunch";
 import Cart from '../components/Cart';
 import Hero from "../components/Hero";
 import HomeInfoCards from "../components/home-info-cards";

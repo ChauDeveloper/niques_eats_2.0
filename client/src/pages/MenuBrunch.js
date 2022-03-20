@@ -10,11 +10,11 @@ import {
 	Col,
 	Row,
 } from "reactstrap";
-import "../styles/brunch-menu.css";
+import "../styles/menus.css";
 
 
 import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
+import CategoryMenuBrunch from "../components/CategoryMenuBrunch";
 import Cart from '../components/Cart';
 
 
@@ -44,7 +44,7 @@ const MenuBrunch = () => {
 <div id="brunch-background">
     <div id="brunch">
         <div id="nav-buttons-container" className="container">
-           <CategoryMenu />
+           <CategoryMenuBrunch />
         </div>
 
         <div id="brunch-dishes">

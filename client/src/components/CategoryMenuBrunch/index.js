@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import "./style.css"
 
-function CategoryMenu({  }) {
+function CategoryMenuBrunch({  }) {
   const [state, dispatch] = useStoreContext();
 
   const { categories } = state;
@@ -51,7 +51,7 @@ function CategoryMenu({  }) {
     <Col>
     {categories.map(item => (     
       // below is the way to ask the app to ignore these item in category list
-      // item.name === 'Main Dishes' || item.name === 'Sides' ||
+      item.name === 'Main Dishes - Dinner' || item.name === 'Sides - Dinner' || item.name === 'Dessert - Dinner' ||
       <button class="menu-nav-buttons"
         key={item._id}
         onClick={() => {
@@ -66,4 +66,4 @@ function CategoryMenu({  }) {
 );
 }
 
-export default CategoryMenu;
+export default CategoryMenuBrunch;

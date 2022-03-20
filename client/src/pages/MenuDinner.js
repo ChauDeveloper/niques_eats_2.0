@@ -3,10 +3,10 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button, Col, Row,
 } from 'reactstrap';
-import "../styles/dinner-menu.css"
+import "../styles/menus.css"
 
 import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
+import CategoryMenuDinner from "../components/CategoryMenuDinner";
 import Cart from '../components/Cart';
 
 
@@ -42,8 +42,8 @@ const MenuDinner = () => {
       <div id="dinner-background">
         <div id="dinner">
 
-          <div id="nav-buttons-container">
-          <CategoryMenu class="menu-nav-buttons-dinner" />
+          <div id="nav-buttons-container" className="container">
+          <CategoryMenuDinner  />
           </div>
 
           <div id="dinner-dishes">

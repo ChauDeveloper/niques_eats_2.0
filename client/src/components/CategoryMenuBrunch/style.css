@@ -1,18 +1,11 @@
-#nav-buttons-container {
-	position:relative;
-}
 
-#nav-buttons-row {
-position: absolute;
-right: 27%;
-bottom:0;
-}
 
 .menu-nav-buttons{
 	background-color: #e8b16d;
 	text-align-last: center;
     color:#603f16;
 	margin: 3vw;
+	font-size: 1.6rem;
 }
 .menu-nav-buttons:hover{
 	background-color: var(--primary);
