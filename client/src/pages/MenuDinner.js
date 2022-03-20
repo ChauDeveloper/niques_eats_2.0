@@ -46,23 +46,11 @@ const MenuDinner = () => {
           <CategoryMenu class="menu-nav-buttons-dinner" />
           </div>
 
-
-
-
-          <div id="brunch-dishes">
+          <div id="dinner-dishes">
           <ProductList />
           </div>
-
-
         </div>
-
-
         <Cart />
-
-
-
-
-
       </div>
     </div>
 

@@ -28,15 +28,15 @@ const Header = () => {
           <h3>MENU</h3>
           </Link>
           </li>
-          <li class="nav-item">
-          <Link to="/#about">
+          <li class="nav-item">      
+          <a href="/#about">
           <h3>ABOUT</h3>
-          </Link>
+          </a>         
           </li>
           <li class="nav-item">
-          <Link to="/#contact">
+          <a href="/#contact">         
           <h3>CONTACT</h3>
-          </Link>
+          </a>
           </li>
         {Auth.loggedIn() ? (
             <>
