@@ -277,7 +277,15 @@ div.col-sm.info-section {
 }
 
 
+/* ORDER HISTORY */
+#order-history-items {
+	display: flex;
+	flex-direction: row;
+}
 
+#order-history-image {
+	height:300px;
+}
 
 /* FOOTER */
 footer {
