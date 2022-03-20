@@ -1,5 +1,4 @@
 import React from "react";
-import Dish from "../components/Dish-card";
 import {
 	Card,
 	CardImg,
@@ -49,17 +48,12 @@ const MenuBrunch = () => {
         </div>
 
         <div id="brunch-dishes">
-           
-            
+		
+           <ProductList />
+		
         </div>
     </div>
-
-    <div id="scroll-to-top" className="footer">
-        <a href="#title">
-            {" "}
-            <h4>Scroll To Top ^</h4>{" "}
-        </a>
-    </div>
+		<Cart />
 </div>
 
 

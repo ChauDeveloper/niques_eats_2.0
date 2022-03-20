@@ -8,8 +8,10 @@
 
 #dinner-background {
 	background-image: url('../assets/dinner-menu-background.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
 	padding: 5rem;
-	background-size: contain;
+	
 }
 
 

@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { pluralize } from "../../utils/helpers"
 import { useStoreContext } from '../../utils/GlobalState';
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button, Col, Row,
+  Container, Modal, ModalHeader, ModalBody, ModalFooter, NavItem
+} from 'reactstrap';
+import Calendar from '../Calendar';
+
+
+
 
 function ProductItem(item) {
   const {
@@ -44,20 +53,28 @@ const addToCart = () => {
 
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={`/images/${image}`}
-        />
-        <p>{name}</p>
-      </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <span>${price}</span>
-      </div>
-      <button onClick={addToCart}>Add to cart</button>
-    </div>
+    <Container className="themed-container p-5" fluid={true} id="dish-card">
+    <Col>
+      <Card>
+        <div>
+          <Link to={`/products/${_id}`}>
+          <CardImg top width="100%" src={`/images/${image}`} alt={name} id="dish-img" class="rounded mx-auto d-block" />
+          </Link>
+        </div>
+
+        <CardBody>
+          <div class="row align-items-center">
+            <CardTitle tag="h5" class="col text-start">{name}</CardTitle>
+            <CardSubtitle tag="h5" className="col text-end">${price}</CardSubtitle>
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal"  onClick={addToCart}>
+            Add to Cart
+          </button>
+        </CardBody>
+      
+      </Card>
+    </Col>
+  </Container>
   );
 }
 
